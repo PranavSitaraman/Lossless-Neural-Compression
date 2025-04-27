@@ -1,0 +1,22 @@
+# Configuration file for the reconstruction system
+data:
+  root: './data/1024px_pngs'
+  batch_size: 32
+  subset_size: 3500
+  image_size: 1024
+
+experiments:
+  root: './experiments/3.1[32768]'
+  model_path: "autoencoder.pth"
+  results_dir: "results"
+  logs_dir: "logs"
+  analysis_path: "analysis.png"
+
+compression:
+  algorithm: zlib
+  quality: 9
+
+training:
+  epochs: 5
+  learning_rate: 0.001
+  loss_function: "mse"

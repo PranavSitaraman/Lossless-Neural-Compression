@@ -1,0 +1,1 @@
+Initial model, training on JPEG dataset converted to PNG

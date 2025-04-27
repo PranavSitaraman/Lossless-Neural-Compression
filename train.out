@@ -1,0 +1,59 @@
+Using GPU0 on Machine holygpu8a19403 (Rank 1)
+Using GPU0 on Machine holygpu8a19601 (Rank 2)
+Group initialized? True
+Using GPU0 on Machine holygpu8a19605 (Rank 3)
+Using GPU0 on Machine holygpu8a19401 (Rank 0)
+Loaded pre-trained model.
+Loaded pre-trained model.
+Loaded pre-trained model.
+Loaded pre-trained model.
+[GPU2] Epoch 0 | Batchsize: 32 | Steps: 28
+[GPU3] Epoch 0 | Batchsize: 32 | Steps: 28
+[GPU0] Epoch 0 | Batchsize: 32 | Steps: 28
+Epoch 1/5 starting...
+[GPU1] Epoch 0 | Batchsize: 32 | Steps: 28
+Rank 1 | Epoch Loss: 0.19404494762420654
+Rank 3 | Epoch Loss: 0.1875266283750534
+Rank 0 | Epoch Loss: 0.18658185005187988
+Rank 2 | Epoch Loss: 0.18520373106002808
+Epoch [1/5], Avg Loss: 0.1883
+[GPU1] Epoch 1 | Batchsize: 32 | Steps: 28
+[GPU3] Epoch 1 | Batchsize: 32 | Steps: 28
+[GPU2] Epoch 1 | Batchsize: 32 | Steps: 28
+[GPU0] Epoch 1 | Batchsize: 32 | Steps: 28
+Epoch 2/5 starting...
+Rank 1 | Epoch Loss: 0.17173871397972107
+Rank 0 | Epoch Loss: 0.1758483350276947
+Rank 3 | Epoch Loss: 0.16500718891620636
+Rank 2 | Epoch Loss: 0.1703088879585266
+Epoch [2/5], Avg Loss: 0.1707
+[GPU1] Epoch 2 | Batchsize: 32 | Steps: 28
+[GPU3] Epoch 2 | Batchsize: 32 | Steps: 28
+[GPU2] Epoch 2 | Batchsize: 32 | Steps: 28
+[GPU0] Epoch 2 | Batchsize: 32 | Steps: 28
+Epoch 3/5 starting...
+Rank 0 | Epoch Loss: 0.1651713103055954
+Rank 3 | Epoch Loss: 0.16874238848686218
+Rank 2 | Epoch Loss: 0.16705383360385895
+Rank 1 | Epoch Loss: 0.16784241795539856
+Epoch [3/5], Avg Loss: 0.1672
+[GPU0] Epoch 3 | Batchsize: 32 | Steps: 28
+Epoch 4/5 starting...
+[GPU3] Epoch 3 | Batchsize: 32 | Steps: 28
+[GPU2] Epoch 3 | Batchsize: 32 | Steps: 28
+[GPU1] Epoch 3 | Batchsize: 32 | Steps: 28
+Rank 0 | Epoch Loss: 0.16244959831237793
+Rank 1 | Epoch Loss: 0.16578346490859985
+Rank 2 | Epoch Loss: 0.168358713388443
+Rank 3 | Epoch Loss: 0.1644991934299469
+Epoch [4/5], Avg Loss: 0.1653
+[GPU2] Epoch 4 | Batchsize: 32 | Steps: 28
+[GPU1] Epoch 4 | Batchsize: 32 | Steps: 28
+[GPU3] Epoch 4 | Batchsize: 32 | Steps: 28
+[GPU0] Epoch 4 | Batchsize: 32 | Steps: 28
+Epoch 5/5 starting...
+Rank 0 | Epoch Loss: 0.16256794333457947
+Rank 1 | Epoch Loss: 0.16033151745796204
+Rank 2 | Epoch Loss: 0.16435518860816956
+Rank 3 | Epoch Loss: 0.16208401322364807
+Epoch [5/5], Avg Loss: 0.1623
