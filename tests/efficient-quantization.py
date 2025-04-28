@@ -16,10 +16,13 @@ import torch
 import torchvision.transforms as transforms
 import torch.nn.functional as F
 
-experiment_dir = str(config.results_dir)
-fig, axes = plt.subplots(3, 5, figsize=(20, 10))
+start_img = 20
+num_images = 5
 
-for i in range(10, 15):
+experiment_dir = str(config.results_dir)
+fig, axes = plt.subplots(3, num_images, figsize=(20, 10))
+
+for i in range(start_img, start_img + num_images):
     original_path = os.path.join(experiment_dir, f"original_{i}.png")
     original = Image.open(original_path)
     transform = transforms.Compose([
@@ -58,19 +61,19 @@ for i in range(10, 15):
     target = transforms.ToPILImage()(target)
     
     # Display original
-    axes[0, i - 10].imshow(image)
-    axes[0, i - 10].set_title(f"Image {i} Original")
-    axes[0, i - 10].axis('on')
+    axes[0, i - start_img].imshow(image)
+    axes[0, i - start_img].set_title(f"Image {i} Original")
+    axes[0, i - start_img].axis('on')
 
     # Display quantized
-    axes[1, i - 10].imshow(quantized)
-    axes[1, i - 10].set_title(f"Image {i} Quantized")
-    axes[1, i - 10].axis('on')
+    axes[1, i - start_img].imshow(quantized)
+    axes[1, i - start_img].set_title(f"Image {i} Quantized")
+    axes[1, i - start_img].axis('on')
     
     # Display target
-    axes[2, i - 10].imshow(target)
-    axes[2, i - 10].set_title(f"Image {i} Target")
-    axes[2, i - 10].axis('on')
+    axes[2, i - start_img].imshow(target)
+    axes[2, i - start_img].set_title(f"Image {i} Target")
+    axes[2, i - start_img].axis('on')
 
 # Adjust layout and save
 plt.tight_layout()
