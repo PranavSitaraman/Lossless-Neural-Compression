@@ -1,2 +1,2 @@
-[W429 17:51:22.173645354 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [holygpu8a19103.rc.fas.harvard.edu]:39591 (errno: 97 - Address family not supported by protocol).
-  0%|          | 0/110 [00:00<?, ?it/s]  1%|          | 1/110 [02:13<4:01:59, 133.21s/it]  1%|          | 1/110 [02:49<5:07:29, 169.26s/it]
+[W430 03:50:41.215659030 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [holygpu7c26206.rc.fas.harvard.edu]:39591 (errno: 97 - Address family not supported by protocol).
+  0%|          | 0/110 [00:00<?, ?it/s]  1%|          | 1/110 [02:12<3:59:49, 132.02s/it]  1%|          | 1/110 [02:48<5:05:18, 168.06s/it]
