@@ -74,8 +74,8 @@ if __name__ == "__main__":
             latent_img_i = transforms.ToPILImage()(latent_img[i])
             diff_img_i = transforms.ToPILImage()(diff_img[i])
             output_i = transforms.ToPILImage()(output[i])
-            latent_i = zlib.compress(latents[i], level=config.compression_quality)
-            extra_diff_i = zlib.compress(extra_diff[i], level=config.compression_quality)
+            latent_i = zlib.compress(bytes(latents[i]), level=config.compression_quality)
+            extra_diff_i = zlib.compress(bytes(extra_diff[i]), level=config.compression_quality)
             
             original.save(os.path.join(experiment_dir, f"original_{count}.png"))
             output_i.save(os.path.join(experiment_dir, f"output_{count}.png"))

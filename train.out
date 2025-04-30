@@ -1,63 +1,63 @@
-Hello from rank 3 of 4 on holygpu8a19605.rc.fas.harvard.edu where there are 1 allocated GPUs per node. | (CUDA_VISIBLE_DEVICES=0)
-Hello from rank 0 of 4 on holygpu8a19201.rc.fas.harvard.edu where there are 1 allocated GPUs per node. | (CUDA_VISIBLE_DEVICES=0)
-Using GPU0 on Machine holygpu8a19605 (Rank 3)
-Hello from rank 1 of 4 on holygpu8a19203.rc.fas.harvard.edu where there are 1 allocated GPUs per node. | (CUDA_VISIBLE_DEVICES=0)
-Hello from rank 2 of 4 on holygpu8a19503.rc.fas.harvard.edu where there are 1 allocated GPUs per node. | (CUDA_VISIBLE_DEVICES=0)
-Using GPU0 on Machine holygpu8a19203 (Rank 1)
+Hello from rank 0 of 4 on holygpu8a19101.rc.fas.harvard.edu where there are 1 allocated GPUs per node. | (CUDA_VISIBLE_DEVICES=0)
+Hello from rank 2 of 4 on holygpu8a19504.rc.fas.harvard.edu where there are 1 allocated GPUs per node. | (CUDA_VISIBLE_DEVICES=0)
+Using GPU0 on Machine holygpu8a19504 (Rank 2)
+Hello from rank 1 of 4 on holygpu8a19406.rc.fas.harvard.edu where there are 1 allocated GPUs per node. | (CUDA_VISIBLE_DEVICES=0)
+Using GPU0 on Machine holygpu8a19406 (Rank 1)
+Hello from rank 3 of 4 on holygpu8a19505.rc.fas.harvard.edu where there are 1 allocated GPUs per node. | (CUDA_VISIBLE_DEVICES=0)
+Using GPU0 on Machine holygpu8a19505 (Rank 3)
 Group initialized? True
-Using GPU0 on Machine holygpu8a19201 (Rank 0)
-Using GPU0 on Machine holygpu8a19503 (Rank 2)
+Using GPU0 on Machine holygpu8a19101 (Rank 0)
 Loaded pre-trained model.
 Loaded pre-trained model.
 Loaded pre-trained model.
 Loaded pre-trained model.
-[GPU1] Epoch 0 | Batchsize: 32 | Steps: 28
-[GPU2] Epoch 0 | Batchsize: 32 | Steps: 28
+[GPU3] Epoch 0 | Batchsize: 32 | Steps: 28
 [GPU0] Epoch 0 | Batchsize: 32 | Steps: 28
 Epoch 1/5 starting...
-[GPU3] Epoch 0 | Batchsize: 32 | Steps: 28
-Rank 0 | Epoch Loss: 0.14087513089179993
-Rank 2 | Epoch Loss: 0.1392187923192978
-Rank 3 | Epoch Loss: 0.1414051055908203
-Rank 1 | Epoch Loss: 0.14622092247009277
-Epoch [1/5], Total Loss: 0.5677
-[GPU2] Epoch 1 | Batchsize: 32 | Steps: 28
+[GPU1] Epoch 0 | Batchsize: 32 | Steps: 28
+[GPU2] Epoch 0 | Batchsize: 32 | Steps: 28
+Rank 3 | Epoch Loss: 0.12617942690849304
+Rank 2 | Epoch Loss: 0.1236717700958252
+Rank 0 | Epoch Loss: 0.12409668415784836
+Rank 1 | Epoch Loss: 0.1300821453332901
+Epoch [1/5], Total Loss: 0.5040
+[GPU3] Epoch 1 | Batchsize: 32 | Steps: 28
 [GPU0] Epoch 1 | Batchsize: 32 | Steps: 28
 Epoch 2/5 starting...
+[GPU2] Epoch 1 | Batchsize: 32 | Steps: 28
 [GPU1] Epoch 1 | Batchsize: 32 | Steps: 28
-[GPU3] Epoch 1 | Batchsize: 32 | Steps: 28
-Rank 1 | Epoch Loss: 0.13949549198150635
-Rank 2 | Epoch Loss: 0.13726364076137543
-Rank 0 | Epoch Loss: 0.1444612741470337
-Rank 3 | Epoch Loss: 0.13294781744480133
-Epoch [2/5], Total Loss: 0.5542
-[GPU1] Epoch 2 | Batchsize: 32 | Steps: 28
-[GPU2] Epoch 2 | Batchsize: 32 | Steps: 28
+Rank 3 | Epoch Loss: 0.10719442367553711
+Rank 1 | Epoch Loss: 0.11543478071689606
+Rank 0 | Epoch Loss: 0.11990712583065033
+Rank 2 | Epoch Loss: 0.11293922364711761
+Epoch [2/5], Total Loss: 0.4555
 [GPU3] Epoch 2 | Batchsize: 32 | Steps: 28
 [GPU0] Epoch 2 | Batchsize: 32 | Steps: 28
 Epoch 3/5 starting...
-Rank 1 | Epoch Loss: 0.13933901488780975
-Rank 2 | Epoch Loss: 0.13701863586902618
-Rank 0 | Epoch Loss: 0.1367262303829193
-Rank 3 | Epoch Loss: 0.13785240054130554
-Epoch [3/5], Total Loss: 0.5509
+[GPU1] Epoch 2 | Batchsize: 32 | Steps: 28
+[GPU2] Epoch 2 | Batchsize: 32 | Steps: 28
+Rank 2 | Epoch Loss: 0.11018501222133636
+Rank 3 | Epoch Loss: 0.1114189401268959
+Rank 0 | Epoch Loss: 0.10992560535669327
+Rank 1 | Epoch Loss: 0.11292588710784912
+Epoch [3/5], Total Loss: 0.4445
+[GPU3] Epoch 3 | Batchsize: 32 | Steps: 28
+[GPU2] Epoch 3 | Batchsize: 32 | Steps: 28
 [GPU0] Epoch 3 | Batchsize: 32 | Steps: 28
 Epoch 4/5 starting...
 [GPU1] Epoch 3 | Batchsize: 32 | Steps: 28
-[GPU2] Epoch 3 | Batchsize: 32 | Steps: 28
-[GPU3] Epoch 3 | Batchsize: 32 | Steps: 28
-Rank 1 | Epoch Loss: 0.1363084465265274
-Rank 2 | Epoch Loss: 0.14071093499660492
-Rank 0 | Epoch Loss: 0.13484588265419006
-Rank 3 | Epoch Loss: 0.1355016529560089
-Epoch [4/5], Total Loss: 0.5474
-[GPU3] Epoch 4 | Batchsize: 32 | Steps: 28
+Rank 1 | Epoch Loss: 0.10855840891599655
+Rank 3 | Epoch Loss: 0.10796399414539337
+Rank 0 | Epoch Loss: 0.10743128508329391
+Rank 2 | Epoch Loss: 0.1123494878411293
+Epoch [4/5], Total Loss: 0.4363
 [GPU1] Epoch 4 | Batchsize: 32 | Steps: 28
-[GPU2] Epoch 4 | Batchsize: 32 | Steps: 28
 [GPU0] Epoch 4 | Batchsize: 32 | Steps: 28
 Epoch 5/5 starting...
-Rank 3 | Epoch Loss: 0.13538715243339539
-Rank 1 | Epoch Loss: 0.1352209597826004
-Rank 0 | Epoch Loss: 0.13608087599277496
-Rank 2 | Epoch Loss: 0.13840118050575256
-Epoch [5/5], Total Loss: 0.5451
+[GPU3] Epoch 4 | Batchsize: 32 | Steps: 28
+[GPU2] Epoch 4 | Batchsize: 32 | Steps: 28
+Rank 2 | Epoch Loss: 0.11012591421604156
+Rank 1 | Epoch Loss: 0.10629789531230927
+Rank 3 | Epoch Loss: 0.10727571696043015
+Rank 0 | Epoch Loss: 0.10810781270265579
+Epoch [5/5], Total Loss: 0.4318

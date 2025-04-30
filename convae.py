@@ -49,7 +49,7 @@ class ConvAutoencoder(nn.Module):
             nn.ReLU(True),
 
             nn.ConvTranspose2d(32, 3, 4, stride=2, padding=1),    # 64x64 -> 128x128
-            nn.Sigmoid()  # For pixel values between 0 and 1
+            nn.Tanh()  # For difference values between -1 and 1
         )
 
     def split_into_patches(self, x):
