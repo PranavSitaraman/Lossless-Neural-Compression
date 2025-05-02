@@ -62,9 +62,5 @@ class Config:
     def learning_rate(self):
         return self.config['training']['learning_rate']
 
-    @property
-    def loss_function(self):
-        return self.config['training']['loss_function']
-
 # Create a singleton instance
 config = Config()

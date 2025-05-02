@@ -9,7 +9,7 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --gpus-per-node=1
 
-#SBATCH --time=01:00:00
+#SBATCH --time=02:00:00
 #SBATCH --mem=0
 #SBATCH --partition=kempner
 #SBATCH --constraint=a100

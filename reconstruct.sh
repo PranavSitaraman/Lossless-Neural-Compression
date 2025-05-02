@@ -11,7 +11,9 @@
 
 #SBATCH --time=00:10:00
 #SBATCH --mem=0
-#SBATCH --partition=gpu_test
+#SBATCH --partition=kempner
+#SBATCH --constraint=a100
+#SBATCH --account=kempner_sham_lab
 
 module load python cuda cudnn
 source .venv/bin/activate

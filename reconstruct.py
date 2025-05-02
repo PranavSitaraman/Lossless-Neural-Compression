@@ -1,4 +1,5 @@
 import torch
+import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import transforms
 from torch.nn.parallel import DistributedDataParallel
@@ -27,7 +28,6 @@ if __name__ == "__main__":
     test_dataset = TransformedDataset(Subset(imagenet_dataset, subset_indices), config.image_size)
     test_loader = DataLoader(test_dataset, batch_size=config.batch_size)
     num_images = 32
-    num_colors = 7
     experiment_dir = config.results_dir
 
     dist.init_process_group(backend="gloo", rank=0, world_size=1)
@@ -56,7 +56,7 @@ if __name__ == "__main__":
         image_batch = torch.round(image_batch.clamp(0, 1) * 255.0).to(torch.uint8)
         target_batch = torch.round(target_batch.clamp(-1, 1) * 255.0).to(torch.int16)
         quantized_batch = torch.round(quantized_batch.clamp(0, 1) * 255.0).to(torch.uint8)
-
+        
         differences = image_batch.to(torch.int16) - reconstructions.to(torch.int16)
         latent_img = ((reconstructions + 255) // 2).clamp(0, 255).to(torch.uint8)
         target_batch = ((target_batch + 255) // 2).clamp(0, 255).to(torch.uint8)
