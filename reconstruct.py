@@ -50,8 +50,9 @@ if __name__ == "__main__":
 
         model.eval()
         with torch.no_grad():
-            latents = model.module.encode(target_batch)
-            reconstructions = torch.round(model.module.decode(latents).clamp(-1, 1) * 255.0).to(torch.int16)
+            latents = model.module.encode(target_batch/2 + 0.5)
+            reconstructions = 2 * (model.module.decode(latents, target_batch.size(0)) - 0.5)
+            reconstructions = torch.round(reconstructions.clamp(-1, 1) * 255.0).to(torch.int16)
         
         image_batch = torch.round(image_batch.clamp(0, 1) * 255.0).to(torch.uint8)
         target_batch = torch.round(target_batch.clamp(-1, 1) * 255.0).to(torch.int16)

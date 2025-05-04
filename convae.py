@@ -2,78 +2,88 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+def gradients(x: torch.Tensor):
+    gx = torch.zeros_like(x)
+    gy = torch.zeros_like(x)
+    gx[..., :-1] = (x[..., 1:] - x[..., :-1]).abs()
+    gy[..., :-1, :] = (x[..., 1:, :] - x[..., :-1, :]).abs()
+    return gx, gy
+
+class EdgeAwareLoss(nn.Module):
+    def __init__(self, lambda_grad: float = 0.01):
+        super().__init__()
+        self.lambda_grad = lambda_grad
+
+    def forward(self, output: torch.Tensor, target: torch.Tensor) -> torch.Tensor:
+        l1 = F.l1_loss(output, target)
+        gx_o, gy_o = gradients(output)
+        gx_t, gy_t = gradients(target)
+        grad_loss = F.l1_loss(gx_o, gx_t) + F.l1_loss(gy_o, gy_t)
+        return l1 + self.lambda_grad * grad_loss
+
 class ConvAutoencoder(nn.Module):
-    def __init__(self, image_size: int = 1024, patch_size: int = 128, latent_channels: int = 512):
-        super(ConvAutoencoder, self).__init__()
+    def __init__(self, image_size: int = 1024, patch_size: int = 128,
+                 stride: int = 64, latent_dim: int = 512):
+        super().__init__()
         self.image_size = image_size
         self.patch_size = patch_size
+        self.stride = stride
+        assert self.patch_size % 8 == 0, "patch_size must be divisible by 8"
 
-        # ---------- Encoder ----------
-        self.encoder = nn.Sequential(
-            nn.Conv2d(3, 32, 4, stride=2, padding=1),       # 128 → 64
-            nn.BatchNorm2d(32),
-            nn.LeakyReLU(0.2, inplace=True),
+        # ── Encoder ──
+        channels = [3, 32, 64, 128, 256]
+        enc = []
+        for c_in, c_out in zip(channels, channels[1:]):
+            enc += [nn.Conv2d(c_in, c_out, 4, 2, 1),
+                    nn.GroupNorm(8, c_out),
+                    nn.ReLU(inplace=True)]
+        enc += [nn.Conv2d(256, latent_dim, 1)]
+        self.encoder = nn.Sequential(*enc)
 
-            nn.Conv2d(32, 64, 4, stride=2, padding=1),      # 64 → 32
-            nn.BatchNorm2d(64),
-            nn.LeakyReLU(0.2, inplace=True),
-
-            nn.Conv2d(64, 128, 4, stride=2, padding=1),     # 32 → 16
-            nn.BatchNorm2d(128),
-            nn.LeakyReLU(0.2, inplace=True),
-
-            nn.Conv2d(128, 256, 4, stride=2, padding=1),    # 16 → 8
-            nn.BatchNorm2d(256),
-            nn.LeakyReLU(0.2, inplace=True),
-
-            nn.Conv2d(256, latent_channels, 4, stride=2, padding=1),  # 8 → 4
-            nn.LeakyReLU(0.2, inplace=True)
-        )
-
-        # ---------- Decoder ----------
+        # ── Decoder ──
+        def up_block(c_in: int, c_out: int):
+            return nn.Sequential(
+                nn.Upsample(scale_factor=2, mode="nearest"),
+                nn.Conv2d(c_in, c_out, 3, 1, 1),
+                nn.GroupNorm(8, c_out),
+                nn.ReLU(inplace=True),
+            )
         self.decoder = nn.Sequential(
-            nn.ConvTranspose2d(latent_channels, 256, 3, stride=2, padding=1, output_padding=1),  # 4 → 8
-            nn.BatchNorm2d(256),
-            nn.LeakyReLU(0.2, inplace=True),
-
-            nn.ConvTranspose2d(256, 128, 3, stride=2, padding=1, output_padding=1),               # 8 → 16
-            nn.BatchNorm2d(128),
-            nn.LeakyReLU(0.2, inplace=True),
-
-            nn.ConvTranspose2d(128, 64, 3, stride=2, padding=1, output_padding=1),                # 16 → 32
-            nn.BatchNorm2d(64),
-            nn.LeakyReLU(0.2, inplace=True),
-
-            nn.ConvTranspose2d(64, 32, 3, stride=2, padding=1, output_padding=1),                 # 32 → 64
-            nn.BatchNorm2d(32),
-            nn.LeakyReLU(0.2, inplace=True),
-
-            nn.ConvTranspose2d(32, 3, 3, stride=2, padding=1, output_padding=1),                  # 64 → 128
-            nn.Tanh()
+            up_block(latent_dim, 256),
+            up_block(256, 128),
+            up_block(128, 64),
+            up_block(64, 32),
+            nn.Conv2d(32, 3, 3, 1, 1),
+            nn.Sigmoid(),
         )
+    
+    def create_patches(self, x: torch.Tensor) -> torch.Tensor:
+        ps, s = self.patch_size, self.stride
+        patches = F.unfold(x, kernel_size=ps, stride=s)
+        patches = patches.transpose(1, 2).reshape(-1, 3, ps, ps)
+        return patches
 
-    # ---------- patch utilities ----------
-    def split_into_patches(self, x: torch.Tensor) -> torch.Tensor:
-        ps = self.patch_size
-        x = x.unfold(2, ps, ps).unfold(3, ps, ps)            # (B,C,n_h,n_w,ps,ps)
-        x = x.permute(0, 2, 3, 1, 4, 5).reshape(-1, 3, ps, ps)
-        return x
+    def combine_patches(self, patches: torch.Tensor, batch_size: int) -> torch.Tensor:
+        ps, s = self.patch_size, self.stride
+        device = patches.device
 
-    def assemble_patches(self, patches: torch.Tensor) -> torch.Tensor:
-        ps = self.patch_size
-        npr = self.image_size // ps
-        B = patches.size(0) // (npr * npr)
-        patches = patches.view(B, npr, npr, 3, ps, ps)
-        patches = patches.permute(0, 3, 1, 4, 2, 5)
-        return patches.reshape(B, 3, self.image_size, self.image_size)
+        L = patches.size(0) // batch_size
+        patches = patches.view(batch_size, L, 3 * ps * ps).transpose(1, 2)
 
-    # ---------- encode / decode ----------
+        H = W = self.image_size
+        out = F.fold(patches, (H, W), kernel_size=ps, stride=s)
+
+        ones = torch.ones((batch_size, 3, H, W), device=device)
+        divisor = F.fold(F.unfold(ones, kernel_size=ps, stride=s), (H, W), kernel_size=ps, stride=s)
+        return (out / divisor).clamp(0, 1)
+    
     def encode(self, x: torch.Tensor) -> torch.Tensor:
-        return self.encoder(self.split_into_patches(x))
+        return self.encoder(self.create_patches(x.clamp(0, 1)))
 
-    def decode(self, encoded_patches: torch.Tensor) -> torch.Tensor:
-        return self.assemble_patches(self.decoder(encoded_patches))
+    def decode(self, z: torch.Tensor, batch_size: int) -> torch.Tensor:
+        return self.combine_patches(self.decoder(z), batch_size)
 
-    # ---------- forward ----------
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return self.decode(self.encode(x))
+        B = x.size(0)
+        z = self.encode(x)
+        return self.decode(z, B)

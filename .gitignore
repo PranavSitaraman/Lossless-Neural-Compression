@@ -2,3 +2,7 @@ __pycache__
 .venv
 .vscode
 data
+train.err
+train.out
+reconstruct.err
+reconstruct.out

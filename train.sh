@@ -4,16 +4,14 @@
 #SBATCH --output=train.out
 #SBATCH --error=train.err
 
+#SBATCH --gres=gpu:nvidia_a100-sxm4-80gb:1
 #SBATCH --nodes=4
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=4
-#SBATCH --gpus-per-node=1
-
-#SBATCH --time=02:00:00
 #SBATCH --mem=0
-#SBATCH --partition=kempner
-#SBATCH --constraint=a100
-#SBATCH --account=kempner_sham_lab
+
+#SBATCH --time=01:00:00
+#SBATCH --partition=gpu
 
 module load python cuda cudnn
 source .venv/bin/activate

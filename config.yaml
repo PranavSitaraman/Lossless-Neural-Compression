@@ -6,7 +6,7 @@ data:
   image_size: 1024
 
 experiments:
-  root: './experiments/4.0[524288]'
+  root: './experiments/4.1[14.7M]'
   model_path: "autoencoder.pth"
   results_dir: "results"
   logs_dir: "logs"
@@ -17,5 +17,5 @@ compression:
   quality: 9
 
 training:
-  epochs: 10
-  learning_rate: 0.001
+  epochs: 5
+  learning_rate: 0.0005

@@ -10,7 +10,7 @@ from tqdm import tqdm
 import os
 import socket
 from config import config
-from convae import ConvAutoencoder
+from convae import ConvAutoencoder, EdgeAwareLoss
 from transformed import TransformedDataset
     
 if __name__ == "__main__":
@@ -49,6 +49,7 @@ if __name__ == "__main__":
     else:
         print("No pre-trained model found. Training from scratch.")
     
+    criterion = EdgeAwareLoss()
     optimizer = Adam(model.parameters(), lr=config.learning_rate)
 
     imagenet_dataset = torchvision.datasets.ImageFolder(root=config.data_root)
@@ -78,8 +79,8 @@ if __name__ == "__main__":
             image, target, quantized = image.to(device), target.to(device), quantized.to(device)
 
             with torch.amp.autocast("cuda"):
-                outputs = model(target)
-                loss = nn.SmoothL1Loss(beta=0.005)(outputs, target)
+                outputs = 2 * (model(target/2 + 0.5) - 0.5)
+                loss = criterion(outputs, target)
 
             scaler.scale(loss).backward()
             scaler.step(optimizer)
