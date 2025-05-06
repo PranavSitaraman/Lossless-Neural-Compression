@@ -12,6 +12,7 @@ from config import config
 from convae import ConvAutoencoder
 import zlib
 from transformed import TransformedDataset
+from PIL import Image
 
 if __name__ == "__main__":
     os.makedirs(config.experiment_root, exist_ok=True)

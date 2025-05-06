@@ -1,7 +1,7 @@
 # Configuration file for the reconstruction system
 data:
   root: './data/1024px_pngs'
-  batch_size: 32
+  batch_size: 4
   subset_size: 3000
   image_size: 1024
 

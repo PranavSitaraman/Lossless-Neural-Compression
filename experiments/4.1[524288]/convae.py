@@ -10,7 +10,7 @@ def gradients(x: torch.Tensor):
     return gx, gy
 
 class EdgeAwareLoss(nn.Module):
-    def __init__(self, lambda_grad: float = 0.01):
+    def __init__(self, lambda_grad: float = 0.1):
         super().__init__()
         self.lambda_grad = lambda_grad
 
@@ -60,7 +60,8 @@ class ConvAutoencoder(nn.Module):
     def create_patches(self, x: torch.Tensor) -> torch.Tensor:
         ps, s = self.patch_size, self.stride
         patches = F.unfold(x, kernel_size=ps, stride=s)
-        patches = patches.transpose(1, 2).reshape(-1, 3, ps, ps)
+        patches = patches.transpose(1, 2).contiguous()
+        patches = patches.view(-1, 3, ps, ps)
         return patches
 
     def combine_patches(self, patches: torch.Tensor, batch_size: int) -> torch.Tensor:
@@ -68,7 +69,8 @@ class ConvAutoencoder(nn.Module):
         device = patches.device
 
         L = patches.size(0) // batch_size
-        patches = patches.view(batch_size, L, 3 * ps * ps).transpose(1, 2)
+        patches = patches.view(batch_size, L, 3 * ps * ps).contiguous()
+        patches = patches.transpose(1, 2)
 
         H = W = self.image_size
         out = F.fold(patches, (H, W), kernel_size=ps, stride=s)
