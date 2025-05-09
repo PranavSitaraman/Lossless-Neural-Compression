@@ -18,24 +18,19 @@ if __name__ == "__main__":
     os.makedirs(config.results_dir, exist_ok=True)
     os.makedirs(config.logs_dir, exist_ok=True)
 
-    rank          = int(os.environ["SLURM_PROCID"])
-    world_size    = int(os.environ["WORLD_SIZE"])
-    gpus_per_node = int(os.environ["SLURM_GPUS_ON_NODE"])
-
-    assert (
-    gpus_per_node == torch.cuda.device_count()
-    ), f'SLURM_GPUS_ON_NODE={gpus_per_node} vs torch.cuda.device_count={torch.cuda.device_count()}'
-
+    local_rank = int(os.environ.get("LOCAL_RANK", 0))
+    rank = int(os.environ.get("RANK", 0))
+    world_size = int(os.environ.get("WORLD_SIZE", 4))
+    
     print(
-    f"Hello from rank {rank} of {world_size} on {socket.gethostname()} where there are" \
-    f" {gpus_per_node} allocated GPUs per node." \
-    f' | (CUDA_VISIBLE_DEVICES={os.environ["CUDA_VISIBLE_DEVICES"]})', flush=True
+        f"Hello from rank {rank} of {world_size} on {socket.gethostname()} where there are" \
+        f" {torch.cuda.device_count()} available GPUs.", flush=True
     )
 
-    dist.init_process_group(backend="nccl", rank=rank, world_size=world_size)
+    dist.init_process_group(backend="nccl")
     if rank == 0: print(f"Group initialized? {dist.is_initialized()}", flush=True)
 
-    device = rank - gpus_per_node * (rank // gpus_per_node)
+    device = local_rank
     torch.cuda.set_device(device)
 
     print(f"Using GPU{device} on Machine {os.uname().nodename.split('.')[0]} (Rank {rank})", flush=True)
@@ -45,9 +40,9 @@ if __name__ == "__main__":
 
     if os.path.exists(config.model_path):
         model.load_state_dict(torch.load(config.model_path))
-        print("Loaded pre-trained model.")
+        print("Loaded pre-trained model.", flush=True)
     else:
-        print("No pre-trained model found. Training from scratch.")
+        print("No pre-trained model found. Training from scratch.", flush=True)
     
     criterion = EdgeAwareLoss()
     optimizer = Adam(model.parameters(), lr=config.learning_rate)
@@ -60,7 +55,7 @@ if __name__ == "__main__":
         train_dataset,
         batch_size=config.batch_size,
         sampler=DistributedSampler(train_dataset, num_replicas=world_size, rank=rank),
-        num_workers=int(os.environ["SLURM_CPUS_PER_TASK"]),
+        num_workers=4,
         pin_memory=True,
         shuffle=False
     )
