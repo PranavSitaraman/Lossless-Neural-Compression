@@ -45,7 +45,7 @@ class TopKActivation(nn.Module):
 class ConvAutoencoder(nn.Module):
     def __init__(
         self, image_size: int = 1024, patch_size: int = 128,
-        stride: int = 64, latent_dim: int = 512, topk: int = 5000
+        stride: int = 64, latent_dim: int = 512, topk: int = 512
     ):
         super().__init__()
         self.image_size = image_size

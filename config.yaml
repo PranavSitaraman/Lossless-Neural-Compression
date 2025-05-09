@@ -18,4 +18,4 @@ compression:
 
 training:
   epochs: 5
-  learning_rate: 0.0005
+  learning_rate: 0.001
