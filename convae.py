@@ -15,15 +15,38 @@ class EdgeAwareLoss(nn.Module):
         self.lambda_grad = lambda_grad
 
     def forward(self, output: torch.Tensor, target: torch.Tensor) -> torch.Tensor:
-        l1 = F.l1_loss(output, target)
+        l2 = F.mse_loss(output, target)
         gx_o, gy_o = gradients(output)
         gx_t, gy_t = gradients(target)
         grad_loss = F.l1_loss(gx_o, gx_t) + F.l1_loss(gy_o, gy_t)
-        return l1 + self.lambda_grad * grad_loss
+        return l2 + self.lambda_grad * grad_loss
+
+class TopKActivation(nn.Module):
+    """
+    Keeps only the top-k absolute activations in each sample; zeros out the rest.
+    """
+    def __init__(self, k: int):
+        super().__init__()
+        self.k = k
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        B = x.size(0)
+        flat = x.view(B, -1)
+        abs_flat = flat.abs()
+        N = abs_flat.size(1)
+        if self.k >= N:
+            return x
+        topk_vals = torch.topk(abs_flat, self.k, dim=1, largest=True).values
+        thresh = topk_vals[:, -1].unsqueeze(1)
+        mask = (abs_flat >= thresh).type_as(flat)
+        flat = flat * mask
+        return flat.view_as(x)
 
 class ConvAutoencoder(nn.Module):
-    def __init__(self, image_size: int = 1024, patch_size: int = 128,
-                 stride: int = 64, latent_dim: int = 512):
+    def __init__(
+        self, image_size: int = 1024, patch_size: int = 128,
+        stride: int = 64, latent_dim: int = 512, topk: int = 5000
+    ):
         super().__init__()
         self.image_size = image_size
         self.patch_size = patch_size
@@ -39,6 +62,9 @@ class ConvAutoencoder(nn.Module):
                     nn.ReLU(inplace=True)]
         enc += [nn.Conv2d(256, latent_dim, 1)]
         self.encoder = nn.Sequential(*enc)
+
+        # Top-K activation layer
+        self.topk_act = TopKActivation(k=topk)
 
         # ── Decoder ──
         def up_block(c_in: int, c_out: int):
@@ -80,7 +106,8 @@ class ConvAutoencoder(nn.Module):
         return (out / divisor).clamp(0, 1)
     
     def encode(self, x: torch.Tensor) -> torch.Tensor:
-        return self.encoder(self.create_patches(x.clamp(0, 1)))
+        z = self.encoder(self.create_patches(x.clamp(0, 1)))
+        return self.topk_act(z)
 
     def decode(self, z: torch.Tensor, batch_size: int) -> torch.Tensor:
         return self.combine_patches(self.decoder(z), batch_size)

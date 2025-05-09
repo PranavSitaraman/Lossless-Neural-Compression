@@ -11,8 +11,7 @@
 
 #SBATCH --time=00:10:00
 #SBATCH --mem=0
-#SBATCH --partition=kempner
-#SBATCH --constraint=a100
+#SBATCH --partition=kempner_h100
 #SBATCH --account=kempner_sham_lab
 
 module load python cuda cudnn

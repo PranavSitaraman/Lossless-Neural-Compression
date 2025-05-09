@@ -6,7 +6,7 @@ data:
   image_size: 1024
 
 experiments:
-  root: './experiments/4.1[524288]'
+  root: './experiments/5.1[524288]'
   model_path: "autoencoder.pth"
   results_dir: "results"
   logs_dir: "logs"
