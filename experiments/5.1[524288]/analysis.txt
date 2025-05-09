@@ -1,0 +1,128 @@
+Image ID: 0
+Total compressed original: 917642;
+Total compressed reconstruction: 1188996 = 7419 (latent) + 1175194 (remaining) + 6383 (overflow).
+
+Image ID: 1
+Total compressed original: 885818;
+Total compressed reconstruction: 1177807 = 7221 (latent) + 1162028 (remaining) + 8558 (overflow).
+
+Image ID: 2
+Total compressed original: 853920;
+Total compressed reconstruction: 1069296 = 7519 (latent) + 1054100 (remaining) + 7677 (overflow).
+
+Image ID: 3
+Total compressed original: 1082113;
+Total compressed reconstruction: 1284935 = 7292 (latent) + 1269496 (remaining) + 8147 (overflow).
+
+Image ID: 4
+Total compressed original: 1917932;
+Total compressed reconstruction: 2027438 = 6633 (latent) + 1953489 (remaining) + 67316 (overflow).
+
+Image ID: 5
+Total compressed original: 1814919;
+Total compressed reconstruction: 1846947 = 6531 (latent) + 1831622 (remaining) + 8794 (overflow).
+
+Image ID: 6
+Total compressed original: 1044677;
+Total compressed reconstruction: 1340300 = 6612 (latent) + 1313389 (remaining) + 20299 (overflow).
+
+Image ID: 7
+Total compressed original: 1419696;
+Total compressed reconstruction: 1526146 = 6537 (latent) + 1513332 (remaining) + 6277 (overflow).
+
+Image ID: 8
+Total compressed original: 1391726;
+Total compressed reconstruction: 1642107 = 6585 (latent) + 1626930 (remaining) + 8592 (overflow).
+
+Image ID: 9
+Total compressed original: 944975;
+Total compressed reconstruction: 1298086 = 7203 (latent) + 1195352 (remaining) + 95531 (overflow).
+
+Image ID: 10
+Total compressed original: 1142439;
+Total compressed reconstruction: 1471905 = 6933 (latent) + 1437070 (remaining) + 27902 (overflow).
+
+Image ID: 11
+Total compressed original: 497655;
+Total compressed reconstruction: 772590 = 6904 (latent) + 712697 (remaining) + 52989 (overflow).
+
+Image ID: 12
+Total compressed original: 2345755;
+Total compressed reconstruction: 2361701 = 7186 (latent) + 2347804 (remaining) + 6711 (overflow).
+
+Image ID: 13
+Total compressed original: 1035045;
+Total compressed reconstruction: 1290855 = 7162 (latent) + 1186391 (remaining) + 97302 (overflow).
+
+Image ID: 14
+Total compressed original: 1308547;
+Total compressed reconstruction: 1379161 = 6810 (latent) + 1362792 (remaining) + 9559 (overflow).
+
+Image ID: 15
+Total compressed original: 2796111;
+Total compressed reconstruction: 2851510 = 6695 (latent) + 2802103 (remaining) + 42712 (overflow).
+
+Image ID: 16
+Total compressed original: 1449128;
+Total compressed reconstruction: 1698081 = 5571 (latent) + 1667859 (remaining) + 24651 (overflow).
+
+Image ID: 17
+Total compressed original: 977279;
+Total compressed reconstruction: 1280892 = 6111 (latent) + 1231132 (remaining) + 43649 (overflow).
+
+Image ID: 18
+Total compressed original: 1310957;
+Total compressed reconstruction: 1468297 = 6524 (latent) + 1423962 (remaining) + 37811 (overflow).
+
+Image ID: 19
+Total compressed original: 1868270;
+Total compressed reconstruction: 1976995 = 6575 (latent) + 1912154 (remaining) + 58266 (overflow).
+
+Image ID: 20
+Total compressed original: 1264350;
+Total compressed reconstruction: 1486914 = 6976 (latent) + 1470308 (remaining) + 9630 (overflow).
+
+Image ID: 21
+Total compressed original: 1239957;
+Total compressed reconstruction: 1345217 = 7128 (latent) + 1325576 (remaining) + 12513 (overflow).
+
+Image ID: 22
+Total compressed original: 2518517;
+Total compressed reconstruction: 2580334 = 7534 (latent) + 2521620 (remaining) + 51180 (overflow).
+
+Image ID: 23
+Total compressed original: 1001549;
+Total compressed reconstruction: 1177380 = 7164 (latent) + 1163895 (remaining) + 6321 (overflow).
+
+Image ID: 24
+Total compressed original: 654352;
+Total compressed reconstruction: 1278673 = 7361 (latent) + 1214179 (remaining) + 57133 (overflow).
+
+Image ID: 25
+Total compressed original: 1017670;
+Total compressed reconstruction: 1605625 = 7568 (latent) + 1580546 (remaining) + 17511 (overflow).
+
+Image ID: 26
+Total compressed original: 917306;
+Total compressed reconstruction: 1067969 = 7228 (latent) + 1046142 (remaining) + 14599 (overflow).
+
+Image ID: 27
+Total compressed original: 542432;
+Total compressed reconstruction: 773003 = 6935 (latent) + 758929 (remaining) + 7139 (overflow).
+
+Image ID: 28
+Total compressed original: 779100;
+Total compressed reconstruction: 1001174 = 5357 (latent) + 987067 (remaining) + 8750 (overflow).
+
+Image ID: 29
+Total compressed original: 838145;
+Total compressed reconstruction: 1474607 = 5167 (latent) + 1434793 (remaining) + 34647 (overflow).
+
+Image ID: 30
+Total compressed original: 1158361;
+Total compressed reconstruction: 1718366 = 4756 (latent) + 1704252 (remaining) + 9358 (overflow).
+
+Image ID: 31
+Total compressed original: 2191070;
+Total compressed reconstruction: 2361180 = 5703 (latent) + 2266199 (remaining) + 89278 (overflow).
+

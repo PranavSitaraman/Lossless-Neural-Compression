@@ -1,0 +1,1 @@
+Reduced top-k to k=512, trained 20 epochs with L2 loss and last 10 with L1
