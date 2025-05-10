@@ -10,8 +10,7 @@ from tqdm import tqdm
 import os
 import socket
 from config import config
-from convae import ConvAutoencoder, EdgeAwareLoss
-from transformed import TransformedDataset
+from model import ConvAutoencoder, EdgeAwareLoss, TransformedDataset
     
 if __name__ == "__main__":
     os.makedirs(config.experiment_root, exist_ok=True)
@@ -47,9 +46,9 @@ if __name__ == "__main__":
     criterion = EdgeAwareLoss()
     optimizer = Adam(model.parameters(), lr=config.learning_rate)
 
-    imagenet_dataset = torchvision.datasets.ImageFolder(root=config.data_root)
-    subset_indices = list(range(config.subset_size))
-    train_dataset = TransformedDataset(Subset(imagenet_dataset, subset_indices), config.image_size)
+    dataset = torchvision.datasets.ImageFolder(root=config.data_root)
+    subset_indices = list(range(config.training_size))
+    train_dataset = TransformedDataset(Subset(dataset, subset_indices), config.image_size)
 
     train_loader = DataLoader(
         train_dataset,
@@ -70,7 +69,7 @@ if __name__ == "__main__":
         model.train()
         epoch_loss_tensor = torch.tensor(0.0, device=device)
 
-        for image, target, quantized in tqdm(train_loader, desc=f"Rank {rank} Training", disable=(rank != 0)):
+        for image, target, quantized in tqdm(train_loader, desc=f"Epoch {i} Training", disable=(rank != 0)):
             image, target, quantized = image.to(device), target.to(device), quantized.to(device)
 
             with torch.amp.autocast("cuda"):

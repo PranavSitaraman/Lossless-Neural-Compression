@@ -19,8 +19,12 @@ class Config:
         return self.config['data']['batch_size']
 
     @property
-    def subset_size(self):
-        return self.config['data']['subset_size']
+    def training_size(self):
+        return self.config['data']['training_size']
+
+    @property
+    def total_size(self):
+        return self.config['data']['total_size']
 
     @property
     def image_size(self):

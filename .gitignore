@@ -2,5 +2,5 @@ __pycache__
 .venv
 .vscode
 data
-*.err
-*.out
+experiments/6.0/results
+experiments/6.0/results.zip

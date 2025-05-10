@@ -1,12 +1,12 @@
-# Configuration file for the reconstruction system
 data:
   root: './data/1024px_pngs'
-  batch_size: 4
-  subset_size: 3000
+  batch_size: 8
+  training_size: 3000
+  total_size: 3500
   image_size: 1024
 
 experiments:
-  root: './experiments/5.1[524288]'
+  root: './experiments/6.0'
   model_path: "autoencoder.pth"
   results_dir: "results"
   logs_dir: "logs"
