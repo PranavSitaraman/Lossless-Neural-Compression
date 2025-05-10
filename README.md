@@ -20,3 +20,4 @@ torchrun --nproc_per_node 4 test.py
 ### Notes
 - Before running the scripts, change the `config.yaml` file to select the desired dataset path and experiments directory.
 - Current tests partition the dataset into 3000 initial images of training data followed by 500 unseen images used for testing.
+- The model for experiment 2.0 and the results for experiment 6.0 can be found [here](https://drive.google.com/drive/folders/13pp5aODhEZ7i-wZPTM-HCsRtVaU7Q-qu?usp=drive_link).
