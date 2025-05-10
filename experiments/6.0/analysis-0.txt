@@ -1,0 +1,625 @@
+Image ID: 0
+Original size: 1958681;
+Method 1 size: 2694526 = 5209 (latent) + 369753 (quantized) + 2319564 (residual);
+Method 2 size: 1994803 = 5209 (latent) + 1979974 (learned quantization) + 9620 (overflow).
+
+Image ID: 4
+Original size: 2326790;
+Method 1 size: 3415514 = 5648 (latent) + 486999 (quantized) + 2922867 (residual);
+Method 2 size: 2451609 = 5648 (latent) + 2404364 (learned quantization) + 41597 (overflow).
+
+Image ID: 8
+Original size: 200851;
+Method 1 size: 744968 = 6010 (latent) + 70959 (quantized) + 667999 (residual);
+Method 2 size: 597087 = 6010 (latent) + 521529 (learned quantization) + 69548 (overflow).
+
+Image ID: 12
+Original size: 1521768;
+Method 1 size: 2385553 = 6087 (latent) + 190691 (quantized) + 2188775 (residual);
+Method 2 size: 1669064 = 6087 (latent) + 1655589 (learned quantization) + 7388 (overflow).
+
+Image ID: 16
+Original size: 929179;
+Method 1 size: 1973158 = 5980 (latent) + 126887 (quantized) + 1840291 (residual);
+Method 2 size: 1300863 = 5980 (latent) + 1288397 (learned quantization) + 6486 (overflow).
+
+Image ID: 20
+Original size: 1362599;
+Method 1 size: 2622940 = 5417 (latent) + 121910 (quantized) + 2495613 (residual);
+Method 2 size: 1509009 = 5417 (latent) + 1485502 (learned quantization) + 18090 (overflow).
+
+Image ID: 24
+Original size: 1136532;
+Method 1 size: 1853668 = 5052 (latent) + 95813 (quantized) + 1752803 (residual);
+Method 2 size: 1271709 = 5052 (latent) + 1251535 (learned quantization) + 15122 (overflow).
+
+Image ID: 28
+Original size: 1432525;
+Method 1 size: 2206149 = 5870 (latent) + 124824 (quantized) + 2075455 (residual);
+Method 2 size: 1497341 = 5870 (latent) + 1484505 (learned quantization) + 6966 (overflow).
+
+Image ID: 32
+Original size: 1651021;
+Method 1 size: 2767977 = 7980 (latent) + 181061 (quantized) + 2578936 (residual);
+Method 2 size: 1734888 = 7980 (latent) + 1673767 (learned quantization) + 53141 (overflow).
+
+Image ID: 36
+Original size: 1950197;
+Method 1 size: 3033215 = 7852 (latent) + 345376 (quantized) + 2679987 (residual);
+Method 2 size: 1981738 = 7852 (latent) + 1962424 (learned quantization) + 11462 (overflow).
+
+Image ID: 40
+Original size: 1333341;
+Method 1 size: 2365277 = 7619 (latent) + 157253 (quantized) + 2200405 (residual);
+Method 2 size: 1478973 = 7619 (latent) + 1453542 (learned quantization) + 17812 (overflow).
+
+Image ID: 44
+Original size: 224925;
+Method 1 size: 1564345 = 7825 (latent) + 87417 (quantized) + 1469103 (residual);
+Method 2 size: 1167966 = 7825 (latent) + 761096 (learned quantization) + 399045 (overflow).
+
+Image ID: 48
+Original size: 909212;
+Method 1 size: 1986982 = 7854 (latent) + 82886 (quantized) + 1896242 (residual);
+Method 2 size: 1142811 = 7854 (latent) + 1127723 (learned quantization) + 7234 (overflow).
+
+Image ID: 52
+Original size: 1110335;
+Method 1 size: 2640327 = 7805 (latent) + 207410 (quantized) + 2425112 (residual);
+Method 2 size: 1761922 = 7805 (latent) + 1705537 (learned quantization) + 48580 (overflow).
+
+Image ID: 56
+Original size: 220236;
+Method 1 size: 912492 = 7789 (latent) + 81017 (quantized) + 823686 (residual);
+Method 2 size: 663536 = 7789 (latent) + 643838 (learned quantization) + 11909 (overflow).
+
+Image ID: 60
+Original size: 1546888;
+Method 1 size: 2551652 = 7455 (latent) + 199339 (quantized) + 2344858 (residual);
+Method 2 size: 1577192 = 7455 (latent) + 1563605 (learned quantization) + 6132 (overflow).
+
+Image ID: 64
+Original size: 1805351;
+Method 1 size: 2853376 = 7079 (latent) + 220354 (quantized) + 2625943 (residual);
+Method 2 size: 1856567 = 7079 (latent) + 1840682 (learned quantization) + 8806 (overflow).
+
+Image ID: 68
+Original size: 1408887;
+Method 1 size: 2481470 = 6986 (latent) + 117222 (quantized) + 2357262 (residual);
+Method 2 size: 1536515 = 6986 (latent) + 1517556 (learned quantization) + 11973 (overflow).
+
+Image ID: 72
+Original size: 885773;
+Method 1 size: 1783038 = 7554 (latent) + 71296 (quantized) + 1704188 (residual);
+Method 2 size: 1073013 = 7554 (latent) + 1059327 (learned quantization) + 6132 (overflow).
+
+Image ID: 76
+Original size: 617305;
+Method 1 size: 1427894 = 7613 (latent) + 32295 (quantized) + 1387986 (residual);
+Method 2 size: 912298 = 7613 (latent) + 892725 (learned quantization) + 11960 (overflow).
+
+Image ID: 80
+Original size: 1842848;
+Method 1 size: 2997009 = 7178 (latent) + 231764 (quantized) + 2758067 (residual);
+Method 2 size: 1944311 = 7178 (latent) + 1861532 (learned quantization) + 75601 (overflow).
+
+Image ID: 84
+Original size: 1205871;
+Method 1 size: 2783291 = 6199 (latent) + 148337 (quantized) + 2628755 (residual);
+Method 2 size: 1863635 = 6199 (latent) + 1842542 (learned quantization) + 14894 (overflow).
+
+Image ID: 88
+Original size: 1565732;
+Method 1 size: 2695909 = 6019 (latent) + 191598 (quantized) + 2498292 (residual);
+Method 2 size: 1702285 = 6019 (latent) + 1689341 (learned quantization) + 6925 (overflow).
+
+Image ID: 92
+Original size: 1130372;
+Method 1 size: 2003597 = 6160 (latent) + 72866 (quantized) + 1924571 (residual);
+Method 2 size: 1237265 = 6160 (latent) + 1217295 (learned quantization) + 13810 (overflow).
+
+Image ID: 96
+Original size: 1880802;
+Method 1 size: 3074668 = 7889 (latent) + 264892 (quantized) + 2801887 (residual);
+Method 2 size: 1931994 = 7889 (latent) + 1906049 (learned quantization) + 18056 (overflow).
+
+Image ID: 100
+Original size: 2182331;
+Method 1 size: 3062539 = 7630 (latent) + 443898 (quantized) + 2611011 (residual);
+Method 2 size: 2272176 = 7630 (latent) + 2209624 (learned quantization) + 54922 (overflow).
+
+Image ID: 104
+Original size: 1676088;
+Method 1 size: 2863812 = 6717 (latent) + 218546 (quantized) + 2638549 (residual);
+Method 2 size: 1783583 = 6717 (latent) + 1721901 (learned quantization) + 54965 (overflow).
+
+Image ID: 108
+Original size: 859202;
+Method 1 size: 1600192 = 7264 (latent) + 60791 (quantized) + 1532137 (residual);
+Method 2 size: 1020546 = 7264 (latent) + 1007119 (learned quantization) + 6163 (overflow).
+
+Image ID: 112
+Original size: 1255776;
+Method 1 size: 2121143 = 7697 (latent) + 110125 (quantized) + 2003321 (residual);
+Method 2 size: 1338916 = 7697 (latent) + 1324966 (learned quantization) + 6253 (overflow).
+
+Image ID: 116
+Original size: 1248791;
+Method 1 size: 2149651 = 7701 (latent) + 99059 (quantized) + 2042891 (residual);
+Method 2 size: 1356296 = 7701 (latent) + 1333554 (learned quantization) + 15041 (overflow).
+
+Image ID: 120
+Original size: 1332521;
+Method 1 size: 2779339 = 7754 (latent) + 183471 (quantized) + 2588114 (residual);
+Method 2 size: 1873415 = 7754 (latent) + 1858263 (learned quantization) + 7398 (overflow).
+
+Image ID: 124
+Original size: 2072641;
+Method 1 size: 3231101 = 7695 (latent) + 330196 (quantized) + 2893210 (residual);
+Method 2 size: 2162901 = 7695 (latent) + 2086768 (learned quantization) + 68438 (overflow).
+
+Image ID: 128
+Original size: 1150647;
+Method 1 size: 2224304 = 7431 (latent) + 119136 (quantized) + 2097737 (residual);
+Method 2 size: 1350824 = 7431 (latent) + 1322878 (learned quantization) + 20515 (overflow).
+
+Image ID: 132
+Original size: 1691885;
+Method 1 size: 2740278 = 7509 (latent) + 151968 (quantized) + 2580801 (residual);
+Method 2 size: 1752020 = 7509 (latent) + 1731335 (learned quantization) + 13176 (overflow).
+
+Image ID: 136
+Original size: 1448580;
+Method 1 size: 2519161 = 7871 (latent) + 148570 (quantized) + 2362720 (residual);
+Method 2 size: 1535074 = 7871 (latent) + 1518890 (learned quantization) + 8313 (overflow).
+
+Image ID: 140
+Original size: 1054741;
+Method 1 size: 2106346 = 7363 (latent) + 92170 (quantized) + 2006813 (residual);
+Method 2 size: 1231697 = 7363 (latent) + 1214143 (learned quantization) + 10191 (overflow).
+
+Image ID: 144
+Original size: 1572730;
+Method 1 size: 2745968 = 7879 (latent) + 150129 (quantized) + 2587960 (residual);
+Method 2 size: 1624680 = 7879 (latent) + 1607757 (learned quantization) + 9044 (overflow).
+
+Image ID: 148
+Original size: 827280;
+Method 1 size: 1702610 = 7190 (latent) + 75175 (quantized) + 1620245 (residual);
+Method 2 size: 1044080 = 7190 (latent) + 1030740 (learned quantization) + 6150 (overflow).
+
+Image ID: 152
+Original size: 930900;
+Method 1 size: 2497924 = 7056 (latent) + 169185 (quantized) + 2321683 (residual);
+Method 2 size: 1726803 = 7056 (latent) + 1711609 (learned quantization) + 8138 (overflow).
+
+Image ID: 156
+Original size: 1556899;
+Method 1 size: 2658630 = 5849 (latent) + 288532 (quantized) + 2364249 (residual);
+Method 2 size: 1688640 = 5849 (latent) + 1676659 (learned quantization) + 6132 (overflow).
+
+Image ID: 160
+Original size: 896309;
+Method 1 size: 1620886 = 7409 (latent) + 67723 (quantized) + 1545754 (residual);
+Method 2 size: 1133465 = 7409 (latent) + 1040037 (learned quantization) + 86019 (overflow).
+
+Image ID: 164
+Original size: 1335110;
+Method 1 size: 2213054 = 7047 (latent) + 134080 (quantized) + 2071927 (residual);
+Method 2 size: 1491883 = 7047 (latent) + 1475323 (learned quantization) + 9513 (overflow).
+
+Image ID: 168
+Original size: 1091917;
+Method 1 size: 2175448 = 7197 (latent) + 127223 (quantized) + 2041028 (residual);
+Method 2 size: 1316368 = 7197 (latent) + 1300344 (learned quantization) + 8827 (overflow).
+
+Image ID: 172
+Original size: 1751786;
+Method 1 size: 2578361 = 7659 (latent) + 236720 (quantized) + 2333982 (residual);
+Method 2 size: 1879254 = 7659 (latent) + 1764309 (learned quantization) + 107286 (overflow).
+
+Image ID: 176
+Original size: 1197412;
+Method 1 size: 2522263 = 7322 (latent) + 159806 (quantized) + 2355135 (residual);
+Method 2 size: 1756724 = 7322 (latent) + 1734685 (learned quantization) + 14717 (overflow).
+
+Image ID: 180
+Original size: 1056088;
+Method 1 size: 2343132 = 7409 (latent) + 150887 (quantized) + 2184836 (residual);
+Method 2 size: 1613850 = 7409 (latent) + 1597014 (learned quantization) + 9427 (overflow).
+
+Image ID: 184
+Original size: 1996097;
+Method 1 size: 2852877 = 7162 (latent) + 305014 (quantized) + 2540701 (residual);
+Method 2 size: 2085005 = 7162 (latent) + 2065011 (learned quantization) + 12832 (overflow).
+
+Image ID: 188
+Original size: 1667339;
+Method 1 size: 2548304 = 7008 (latent) + 186430 (quantized) + 2354866 (residual);
+Method 2 size: 1709377 = 7008 (latent) + 1691386 (learned quantization) + 10983 (overflow).
+
+Image ID: 192
+Original size: 1269624;
+Method 1 size: 2409529 = 6936 (latent) + 123633 (quantized) + 2278960 (residual);
+Method 2 size: 1429939 = 6936 (latent) + 1410949 (learned quantization) + 12054 (overflow).
+
+Image ID: 196
+Original size: 950602;
+Method 1 size: 1937639 = 6686 (latent) + 101090 (quantized) + 1829863 (residual);
+Method 2 size: 1117409 = 6686 (latent) + 1104591 (learned quantization) + 6132 (overflow).
+
+Image ID: 200
+Original size: 864066;
+Method 1 size: 2275010 = 6818 (latent) + 125972 (quantized) + 2142220 (residual);
+Method 2 size: 1475038 = 6818 (latent) + 1454498 (learned quantization) + 13722 (overflow).
+
+Image ID: 204
+Original size: 1794014;
+Method 1 size: 2670589 = 7218 (latent) + 215369 (quantized) + 2448002 (residual);
+Method 2 size: 1913529 = 7218 (latent) + 1832364 (learned quantization) + 73947 (overflow).
+
+Image ID: 208
+Original size: 1290031;
+Method 1 size: 2325764 = 6989 (latent) + 106913 (quantized) + 2211862 (residual);
+Method 2 size: 1412390 = 6989 (latent) + 1399236 (learned quantization) + 6165 (overflow).
+
+Image ID: 212
+Original size: 1696730;
+Method 1 size: 2896679 = 7633 (latent) + 223767 (quantized) + 2665279 (residual);
+Method 2 size: 1797310 = 7633 (latent) + 1772791 (learned quantization) + 16886 (overflow).
+
+Image ID: 216
+Original size: 2185890;
+Method 1 size: 3149186 = 7738 (latent) + 400785 (quantized) + 2740663 (residual);
+Method 2 size: 2262357 = 7738 (latent) + 2230110 (learned quantization) + 24509 (overflow).
+
+Image ID: 220
+Original size: 1494441;
+Method 1 size: 2449368 = 7576 (latent) + 129957 (quantized) + 2311835 (residual);
+Method 2 size: 1555695 = 7576 (latent) + 1535482 (learned quantization) + 12637 (overflow).
+
+Image ID: 224
+Original size: 1504958;
+Method 1 size: 2483919 = 5083 (latent) + 108640 (quantized) + 2370196 (residual);
+Method 2 size: 1565869 = 5083 (latent) + 1552637 (learned quantization) + 8149 (overflow).
+
+Image ID: 228
+Original size: 705175;
+Method 1 size: 1484302 = 5420 (latent) + 80770 (quantized) + 1398112 (residual);
+Method 2 size: 1009831 = 5420 (latent) + 979933 (learned quantization) + 24478 (overflow).
+
+Image ID: 232
+Original size: 1487606;
+Method 1 size: 2477469 = 5599 (latent) + 159320 (quantized) + 2312550 (residual);
+Method 2 size: 1558533 = 5599 (latent) + 1544270 (learned quantization) + 8664 (overflow).
+
+Image ID: 236
+Original size: 1135722;
+Method 1 size: 2212803 = 5781 (latent) + 182551 (quantized) + 2024471 (residual);
+Method 2 size: 1236328 = 5781 (latent) + 1214118 (learned quantization) + 16429 (overflow).
+
+Image ID: 240
+Original size: 1290968;
+Method 1 size: 2226588 = 6104 (latent) + 97759 (quantized) + 2122725 (residual);
+Method 2 size: 1386759 = 6104 (latent) + 1365746 (learned quantization) + 14909 (overflow).
+
+Image ID: 244
+Original size: 1055148;
+Method 1 size: 1914811 = 6262 (latent) + 171677 (quantized) + 1736872 (residual);
+Method 2 size: 1415455 = 6262 (latent) + 1390551 (learned quantization) + 18642 (overflow).
+
+Image ID: 248
+Original size: 998630;
+Method 1 size: 2019534 = 6980 (latent) + 110465 (quantized) + 1902089 (residual);
+Method 2 size: 1234379 = 6980 (latent) + 1220236 (learned quantization) + 7163 (overflow).
+
+Image ID: 252
+Original size: 391945;
+Method 1 size: 1203122 = 7225 (latent) + 124007 (quantized) + 1071890 (residual);
+Method 2 size: 923903 = 7225 (latent) + 787724 (learned quantization) + 128954 (overflow).
+
+Image ID: 256
+Original size: 759017;
+Method 1 size: 1418299 = 1723 (latent) + 75183 (quantized) + 1341393 (residual);
+Method 2 size: 904775 = 1723 (latent) + 896728 (learned quantization) + 6324 (overflow).
+
+Image ID: 260
+Original size: 1574246;
+Method 1 size: 2818978 = 2106 (latent) + 163231 (quantized) + 2653641 (residual);
+Method 2 size: 1685784 = 2106 (latent) + 1660028 (learned quantization) + 23650 (overflow).
+
+Image ID: 264
+Original size: 2114351;
+Method 1 size: 3264778 = 3775 (latent) + 389105 (quantized) + 2871898 (residual);
+Method 2 size: 2184915 = 3775 (latent) + 2166912 (learned quantization) + 14228 (overflow).
+
+Image ID: 268
+Original size: 663121;
+Method 1 size: 1469026 = 4554 (latent) + 50709 (quantized) + 1413763 (residual);
+Method 2 size: 938684 = 4554 (latent) + 927719 (learned quantization) + 6411 (overflow).
+
+Image ID: 272
+Original size: 442573;
+Method 1 size: 1132995 = 4270 (latent) + 79014 (quantized) + 1049711 (residual);
+Method 2 size: 663966 = 4270 (latent) + 653511 (learned quantization) + 6185 (overflow).
+
+Image ID: 276
+Original size: 754245;
+Method 1 size: 1561252 = 2249 (latent) + 59276 (quantized) + 1499727 (residual);
+Method 2 size: 979479 = 2249 (latent) + 971008 (learned quantization) + 6222 (overflow).
+
+Image ID: 280
+Original size: 1496728;
+Method 1 size: 2647968 = 1723 (latent) + 147364 (quantized) + 2498881 (residual);
+Method 2 size: 1581417 = 1723 (latent) + 1567349 (learned quantization) + 12345 (overflow).
+
+Image ID: 284
+Original size: 1434794;
+Method 1 size: 2431693 = 1787 (latent) + 225941 (quantized) + 2203965 (residual);
+Method 2 size: 1580717 = 1787 (latent) + 1572671 (learned quantization) + 6259 (overflow).
+
+Image ID: 288
+Original size: 1335540;
+Method 1 size: 2614417 = 6189 (latent) + 145128 (quantized) + 2463100 (residual);
+Method 2 size: 1574689 = 6189 (latent) + 1555337 (learned quantization) + 13163 (overflow).
+
+Image ID: 292
+Original size: 1548592;
+Method 1 size: 2777331 = 6648 (latent) + 212124 (quantized) + 2558559 (residual);
+Method 2 size: 1718915 = 6648 (latent) + 1706071 (learned quantization) + 6196 (overflow).
+
+Image ID: 296
+Original size: 971792;
+Method 1 size: 1999718 = 7178 (latent) + 113410 (quantized) + 1879130 (residual);
+Method 2 size: 1210800 = 7178 (latent) + 1182113 (learned quantization) + 21509 (overflow).
+
+Image ID: 300
+Original size: 2410214;
+Method 1 size: 3402052 = 7052 (latent) + 350068 (quantized) + 3044932 (residual);
+Method 2 size: 2472777 = 7052 (latent) + 2410608 (learned quantization) + 55117 (overflow).
+
+Image ID: 304
+Original size: 1491966;
+Method 1 size: 2802914 = 7536 (latent) + 128175 (quantized) + 2667203 (residual);
+Method 2 size: 1557428 = 7536 (latent) + 1528115 (learned quantization) + 21777 (overflow).
+
+Image ID: 308
+Original size: 1528565;
+Method 1 size: 2317743 = 7239 (latent) + 128658 (quantized) + 2181846 (residual);
+Method 2 size: 1688155 = 7239 (latent) + 1609310 (learned quantization) + 71606 (overflow).
+
+Image ID: 312
+Original size: 1146284;
+Method 1 size: 1824096 = 6727 (latent) + 66931 (quantized) + 1750438 (residual);
+Method 2 size: 1244142 = 6727 (latent) + 1228257 (learned quantization) + 9158 (overflow).
+
+Image ID: 316
+Original size: 2093206;
+Method 1 size: 3031552 = 6837 (latent) + 297926 (quantized) + 2726789 (residual);
+Method 2 size: 2179381 = 6837 (latent) + 2112506 (learned quantization) + 60038 (overflow).
+
+Image ID: 320
+Original size: 1377657;
+Method 1 size: 2161067 = 5618 (latent) + 288792 (quantized) + 1866657 (residual);
+Method 2 size: 1561684 = 5618 (latent) + 1549900 (learned quantization) + 6166 (overflow).
+
+Image ID: 324
+Original size: 1204247;
+Method 1 size: 2138704 = 5513 (latent) + 89305 (quantized) + 2043886 (residual);
+Method 2 size: 1336952 = 5513 (latent) + 1324940 (learned quantization) + 6499 (overflow).
+
+Image ID: 328
+Original size: 1997534;
+Method 1 size: 3097852 = 5449 (latent) + 337394 (quantized) + 2755009 (residual);
+Method 2 size: 2023706 = 5449 (latent) + 2007775 (learned quantization) + 10482 (overflow).
+
+Image ID: 332
+Original size: 1691991;
+Method 1 size: 2927674 = 5564 (latent) + 151152 (quantized) + 2770958 (residual);
+Method 2 size: 1773900 = 5564 (latent) + 1744222 (learned quantization) + 24114 (overflow).
+
+Image ID: 336
+Original size: 706569;
+Method 1 size: 1853052 = 5512 (latent) + 79261 (quantized) + 1768279 (residual);
+Method 2 size: 1062319 = 5512 (latent) + 1047203 (learned quantization) + 9604 (overflow).
+
+Image ID: 340
+Original size: 1180300;
+Method 1 size: 2241435 = 5481 (latent) + 111275 (quantized) + 2124679 (residual);
+Method 2 size: 1432540 = 5481 (latent) + 1344319 (learned quantization) + 82740 (overflow).
+
+Image ID: 344
+Original size: 1157797;
+Method 1 size: 2349690 = 5658 (latent) + 138198 (quantized) + 2205834 (residual);
+Method 2 size: 1376130 = 5658 (latent) + 1364247 (learned quantization) + 6225 (overflow).
+
+Image ID: 348
+Original size: 987491;
+Method 1 size: 2033824 = 5700 (latent) + 113889 (quantized) + 1914235 (residual);
+Method 2 size: 1212203 = 5700 (latent) + 1197083 (learned quantization) + 9420 (overflow).
+
+Image ID: 352
+Original size: 1615838;
+Method 1 size: 2452121 = 6825 (latent) + 113949 (quantized) + 2331347 (residual);
+Method 2 size: 1702338 = 6825 (latent) + 1653856 (learned quantization) + 41657 (overflow).
+
+Image ID: 356
+Original size: 783862;
+Method 1 size: 2057308 = 7583 (latent) + 149382 (quantized) + 1900343 (residual);
+Method 2 size: 1184613 = 7583 (latent) + 1154271 (learned quantization) + 22759 (overflow).
+
+Image ID: 360
+Original size: 1009064;
+Method 1 size: 1937797 = 7397 (latent) + 98347 (quantized) + 1832053 (residual);
+Method 2 size: 1160647 = 7397 (latent) + 1146922 (learned quantization) + 6328 (overflow).
+
+Image ID: 364
+Original size: 1402812;
+Method 1 size: 2807158 = 7000 (latent) + 211809 (quantized) + 2588349 (residual);
+Method 2 size: 1895441 = 7000 (latent) + 1853835 (learned quantization) + 34606 (overflow).
+
+Image ID: 368
+Original size: 2050178;
+Method 1 size: 3304711 = 7296 (latent) + 275958 (quantized) + 3021457 (residual);
+Method 2 size: 2131188 = 7296 (latent) + 2059389 (learned quantization) + 64503 (overflow).
+
+Image ID: 372
+Original size: 1040611;
+Method 1 size: 2126155 = 7078 (latent) + 90401 (quantized) + 2028676 (residual);
+Method 2 size: 1230681 = 7078 (latent) + 1205675 (learned quantization) + 17928 (overflow).
+
+Image ID: 376
+Original size: 870467;
+Method 1 size: 2152173 = 6910 (latent) + 105489 (quantized) + 2039774 (residual);
+Method 2 size: 1470610 = 6910 (latent) + 1399965 (learned quantization) + 63735 (overflow).
+
+Image ID: 380
+Original size: 1913354;
+Method 1 size: 2955504 = 7085 (latent) + 308301 (quantized) + 2640118 (residual);
+Method 2 size: 1982376 = 7085 (latent) + 1962979 (learned quantization) + 12312 (overflow).
+
+Image ID: 384
+Original size: 1831480;
+Method 1 size: 2822155 = 7658 (latent) + 219128 (quantized) + 2595369 (residual);
+Method 2 size: 1882557 = 7658 (latent) + 1867769 (learned quantization) + 7130 (overflow).
+
+Image ID: 388
+Original size: 1592219;
+Method 1 size: 2556250 = 7407 (latent) + 136288 (quantized) + 2412555 (residual);
+Method 2 size: 1666878 = 7407 (latent) + 1648399 (learned quantization) + 11072 (overflow).
+
+Image ID: 392
+Original size: 1932058;
+Method 1 size: 3029960 = 7514 (latent) + 300412 (quantized) + 2722034 (residual);
+Method 2 size: 1965677 = 7514 (latent) + 1943165 (learned quantization) + 14998 (overflow).
+
+Image ID: 396
+Original size: 1837405;
+Method 1 size: 2886949 = 7683 (latent) + 298318 (quantized) + 2580948 (residual);
+Method 2 size: 1871321 = 7683 (latent) + 1857084 (learned quantization) + 6554 (overflow).
+
+Image ID: 400
+Original size: 975053;
+Method 1 size: 2178102 = 7599 (latent) + 114500 (quantized) + 2056003 (residual);
+Method 2 size: 1245189 = 7599 (latent) + 1231267 (learned quantization) + 6323 (overflow).
+
+Image ID: 404
+Original size: 1533865;
+Method 1 size: 2691813 = 7322 (latent) + 174577 (quantized) + 2509914 (residual);
+Method 2 size: 1678602 = 7322 (latent) + 1631558 (learned quantization) + 39722 (overflow).
+
+Image ID: 408
+Original size: 1241871;
+Method 1 size: 2311106 = 7166 (latent) + 112302 (quantized) + 2191638 (residual);
+Method 2 size: 1366469 = 7166 (latent) + 1353100 (learned quantization) + 6203 (overflow).
+
+Image ID: 412
+Original size: 1008444;
+Method 1 size: 2080714 = 7427 (latent) + 87156 (quantized) + 1986131 (residual);
+Method 2 size: 1221654 = 7427 (latent) + 1197267 (learned quantization) + 16960 (overflow).
+
+Image ID: 416
+Original size: 1220028;
+Method 1 size: 2884489 = 7037 (latent) + 184936 (quantized) + 2692516 (residual);
+Method 2 size: 2005104 = 7037 (latent) + 1985900 (learned quantization) + 12167 (overflow).
+
+Image ID: 420
+Original size: 1150732;
+Method 1 size: 2124618 = 7559 (latent) + 156609 (quantized) + 1960450 (residual);
+Method 2 size: 1293852 = 7559 (latent) + 1278451 (learned quantization) + 7842 (overflow).
+
+Image ID: 424
+Original size: 1197130;
+Method 1 size: 2316381 = 7873 (latent) + 152717 (quantized) + 2155791 (residual);
+Method 2 size: 1370717 = 7873 (latent) + 1356374 (learned quantization) + 6470 (overflow).
+
+Image ID: 428
+Original size: 1871660;
+Method 1 size: 2969258 = 7578 (latent) + 281041 (quantized) + 2680639 (residual);
+Method 2 size: 2054589 = 7578 (latent) + 1880027 (learned quantization) + 166984 (overflow).
+
+Image ID: 432
+Original size: 1362689;
+Method 1 size: 2464077 = 7700 (latent) + 100706 (quantized) + 2355671 (residual);
+Method 2 size: 1512220 = 7700 (latent) + 1494536 (learned quantization) + 9984 (overflow).
+
+Image ID: 436
+Original size: 456572;
+Method 1 size: 1402650 = 7667 (latent) + 58571 (quantized) + 1336412 (residual);
+Method 2 size: 828777 = 7667 (latent) + 814866 (learned quantization) + 6244 (overflow).
+
+Image ID: 440
+Original size: 849961;
+Method 1 size: 1488828 = 7400 (latent) + 153674 (quantized) + 1327754 (residual);
+Method 2 size: 998947 = 7400 (latent) + 888791 (learned quantization) + 102756 (overflow).
+
+Image ID: 444
+Original size: 269146;
+Method 1 size: 1087836 = 7522 (latent) + 44736 (quantized) + 1035578 (residual);
+Method 2 size: 775663 = 7522 (latent) + 677068 (learned quantization) + 91073 (overflow).
+
+Image ID: 448
+Original size: 2119204;
+Method 1 size: 3362658 = 7602 (latent) + 362507 (quantized) + 2992549 (residual);
+Method 2 size: 2180270 = 7602 (latent) + 2134634 (learned quantization) + 38034 (overflow).
+
+Image ID: 452
+Original size: 1575266;
+Method 1 size: 2781169 = 8038 (latent) + 280274 (quantized) + 2492857 (residual);
+Method 2 size: 1655668 = 8038 (latent) + 1638560 (learned quantization) + 9070 (overflow).
+
+Image ID: 456
+Original size: 1356894;
+Method 1 size: 2322580 = 8129 (latent) + 106680 (quantized) + 2207771 (residual);
+Method 2 size: 1438836 = 8129 (latent) + 1419467 (learned quantization) + 11240 (overflow).
+
+Image ID: 460
+Original size: 1698532;
+Method 1 size: 2768047 = 8023 (latent) + 177131 (quantized) + 2582893 (residual);
+Method 2 size: 1786813 = 8023 (latent) + 1770138 (learned quantization) + 8652 (overflow).
+
+Image ID: 464
+Original size: 1994285;
+Method 1 size: 3093117 = 7981 (latent) + 308365 (quantized) + 2776771 (residual);
+Method 2 size: 2060072 = 7981 (latent) + 2045755 (learned quantization) + 6336 (overflow).
+
+Image ID: 468
+Original size: 1604522;
+Method 1 size: 2603767 = 7812 (latent) + 241995 (quantized) + 2353960 (residual);
+Method 2 size: 1723722 = 7812 (latent) + 1708059 (learned quantization) + 7851 (overflow).
+
+Image ID: 472
+Original size: 1282789;
+Method 1 size: 3043217 = 7708 (latent) + 221019 (quantized) + 2814490 (residual);
+Method 2 size: 1954133 = 7708 (latent) + 1935516 (learned quantization) + 10909 (overflow).
+
+Image ID: 476
+Original size: 688598;
+Method 1 size: 1516866 = 7791 (latent) + 162333 (quantized) + 1346742 (residual);
+Method 2 size: 899515 = 7791 (latent) + 883828 (learned quantization) + 7896 (overflow).
+
+Image ID: 480
+Original size: 1882315;
+Method 1 size: 2949332 = 6954 (latent) + 253584 (quantized) + 2688794 (residual);
+Method 2 size: 1923937 = 6954 (latent) + 1908616 (learned quantization) + 8367 (overflow).
+
+Image ID: 484
+Original size: 1405150;
+Method 1 size: 2096088 = 7101 (latent) + 136787 (quantized) + 1952200 (residual);
+Method 2 size: 1454009 = 7101 (latent) + 1440723 (learned quantization) + 6185 (overflow).
+
+Image ID: 488
+Original size: 703995;
+Method 1 size: 1562481 = 7138 (latent) + 63524 (quantized) + 1491819 (residual);
+Method 2 size: 1003791 = 7138 (latent) + 982220 (learned quantization) + 14433 (overflow).
+
+Image ID: 492
+Original size: 1131080;
+Method 1 size: 2159443 = 7145 (latent) + 138754 (quantized) + 2013544 (residual);
+Method 2 size: 1356370 = 7145 (latent) + 1312649 (learned quantization) + 36576 (overflow).
+
+Image ID: 496
+Original size: 562288;
+Method 1 size: 1603820 = 6921 (latent) + 163192 (quantized) + 1433707 (residual);
+Method 2 size: 1074861 = 6921 (latent) + 1052151 (learned quantization) + 15789 (overflow).
+

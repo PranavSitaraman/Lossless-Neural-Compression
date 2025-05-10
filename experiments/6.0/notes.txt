@@ -1,0 +1,2 @@
+Updated reward function to remove Gaussian blurring
+Trained 20 epochs with L2 loss + edge awareness 0.1, 20 epochs with L1 loss + edge awareness 0.1, and 20 epochs with L1 loss + edge awareness 0.01
