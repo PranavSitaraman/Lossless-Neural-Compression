@@ -2,5 +2,7 @@ __pycache__
 .venv
 .vscode
 data
+experiments/1.0/autoencoder.pth
+experiments/2.0/autoencoder.pth
 experiments/6.0/results
 experiments/6.0/results.zip
