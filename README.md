@@ -2,6 +2,12 @@
 
 ### Pranav Sitaraman, Gavin Ye, Alex Todoran
 
+Read our write-up [here](Lossless_Neural_Compression.pdf)
+
+---
+
+### Setup
+
 To start the virtual env, run:
 ```bash
 python -m venv .venv
